@@ -17,11 +17,20 @@ public class TransactionController : ControllerBase
         _transactionService = transactionService;
     }
 
-    // POST: transaction
+    /// <summary>
+    /// Creates a new transaction
+    /// </summary>
+    /// <param name="transaction">The transaction data</param>
+    /// <returns>The newly created transaction</returns>
+    /// <response code="201">Returns the newly created transaction</response>
+    /// <response code="400">If the transaction data is invalid</response>
+    [HttpPost]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [HttpPost]
     public async Task<IActionResult> CreateTransaction([FromBody] TransactionDto transaction)
     {
         var result = await _transactionService.CreateTransactionAsync(transaction);
-        return CreatedAtAction("GetTransaction", new { id = result.Id }, result);
+        return Ok(result);
     }
 }
