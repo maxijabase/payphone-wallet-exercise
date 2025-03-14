@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Payphone.Wallet.Domain\PayphoneWallet.Domain.csproj" />
+    <ProjectReference Include="..\Payphone.Wallet.Infrastructure\PayphoneWallet.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayphoneWallet.API", "Payphone.WalletAPI\PayphoneWallet.API.csproj", "{77579D50-4148-4821-A367-D1FF3615C2C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayphoneWallet.Domain", "Payphone.Wallet.Domain\PayphoneWallet.Domain.csproj", "{CFF31781-F77A-487C-812D-843EC5978F8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayphoneWallet.Infrastructure", "Payphone.Wallet.Infrastructure\PayphoneWallet.Infrastructure.csproj", "{ACFBF292-0BF8-4348-A46C-59D7CE469D21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayphoneWallet.Application", "Payphone.Wallet.Application\PayphoneWallet.Application.csproj", "{921B82B5-6E12-4639-B412-54F5EB814657}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77579D50-4148-4821-A367-D1FF3615C2C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77579D50-4148-4821-A367-D1FF3615C2C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77579D50-4148-4821-A367-D1FF3615C2C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77579D50-4148-4821-A367-D1FF3615C2C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFF31781-F77A-487C-812D-843EC5978F8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFF31781-F77A-487C-812D-843EC5978F8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFF31781-F77A-487C-812D-843EC5978F8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFF31781-F77A-487C-812D-843EC5978F8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACFBF292-0BF8-4348-A46C-59D7CE469D21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACFBF292-0BF8-4348-A46C-59D7CE469D21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACFBF292-0BF8-4348-A46C-59D7CE469D21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACFBF292-0BF8-4348-A46C-59D7CE469D21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{921B82B5-6E12-4639-B412-54F5EB814657}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{921B82B5-6E12-4639-B412-54F5EB814657}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{921B82B5-6E12-4639-B412-54F5EB814657}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{921B82B5-6E12-4639-B412-54F5EB814657}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1BDC3930-BD51-4998-A5B9-6218045BBC1C}
+	EndGlobalSection
+EndGlobal
