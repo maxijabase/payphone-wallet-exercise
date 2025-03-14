@@ -16,11 +16,6 @@ public class DbInitializer
     {
         try
         {
-            if (_context.Database.EnsureCreated())
-            {
-                await _context.Database.MigrateAsync();
-            }
-
             if (!_context.Wallets.Any())
             {
                 var wallets = new List<Wallet>
