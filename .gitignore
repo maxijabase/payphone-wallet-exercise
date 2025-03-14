@@ -361,3 +361,9 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Payphone.WalletAPI/PayphoneWallet.db
+/Payphone.WalletAPI/PayphoneWallet.db-shm
+/Payphone.WalletAPI/PayphoneWallet.db-wal
+/Payphone.WalletAPI/PayphoneWallet.db
+/Payphone.WalletAPI/PayphoneWallet.db-shm
+/Payphone.WalletAPI/PayphoneWallet.db-wal
