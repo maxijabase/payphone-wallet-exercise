@@ -1,5 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using PayphoneWallet.Domain.Entities;
+﻿using PayphoneWallet.Domain.Entities;
 
 namespace PayphoneWallet.Infrastructure.Context;
 

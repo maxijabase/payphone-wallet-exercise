@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35825.156 d17.13
+VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayphoneWallet.API", "Payphone.WalletAPI\PayphoneWallet.API.csproj", "{77579D50-4148-4821-A367-D1FF3615C2C9}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayphoneWallet.Infrastructure", "Payphone.Wallet.Infrastructure\PayphoneWallet.Infrastructure.csproj", "{ACFBF292-0BF8-4348-A46C-59D7CE469D21}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayphoneWallet.Application", "Payphone.Wallet.Application\PayphoneWallet.Application.csproj", "{921B82B5-6E12-4639-B412-54F5EB814657}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayphoneWallet.Test", "PayphoneWallet.Test\PayphoneWallet.Test.csproj", "{6064E049-DE8E-4C87-9452-4177D58F6C2C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{921B82B5-6E12-4639-B412-54F5EB814657}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{921B82B5-6E12-4639-B412-54F5EB814657}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{921B82B5-6E12-4639-B412-54F5EB814657}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6064E049-DE8E-4C87-9452-4177D58F6C2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6064E049-DE8E-4C87-9452-4177D58F6C2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6064E049-DE8E-4C87-9452-4177D58F6C2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6064E049-DE8E-4C87-9452-4177D58F6C2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

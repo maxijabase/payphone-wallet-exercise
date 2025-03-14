@@ -11,7 +11,7 @@ public class WalletRepository : GenericRepository<Wallet>, IWalletRepository
     {
     }
 
-    public async Task<Wallet> GetByDocumentAsync(string document)
+    public async Task<Wallet?> GetByDocumentAsync(string document)
     {
         return await _dbSet.FirstOrDefaultAsync(x => x.DocumentId == document);
     }

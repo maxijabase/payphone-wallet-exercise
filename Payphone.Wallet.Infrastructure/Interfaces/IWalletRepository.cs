@@ -4,5 +4,5 @@ namespace PayphoneWallet.Infrastructure.Interfaces;
 
 public interface IWalletRepository : IGenericRepository<Wallet>
 {
-    Task<Wallet> GetByDocumentAsync(string document);
+    Task<Wallet?> GetByDocumentAsync(string document);
 }

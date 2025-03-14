@@ -34,7 +34,7 @@ public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options
             entity.HasOne(e => e.Wallet)
                   .WithMany(e => e.Transactions)
                   .HasForeignKey(e => e.WalletId)
-                  .OnDelete(DeleteBehavior.Restrict);
+                  .OnDelete(DeleteBehavior.Cascade);
         });
     }
 

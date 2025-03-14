@@ -3,11 +3,6 @@ using PayphoneWallet.Application.Interfaces;
 using PayphoneWallet.Domain.DTO;
 using PayphoneWallet.Domain.Entities;
 using PayphoneWallet.Infrastructure.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PayphoneWallet.Application.Services;
 
@@ -48,10 +43,10 @@ public class TransactionService : ITransactionService
             throw new KeyNotFoundException($"Wallet with ID {transactionDto.WalletId} not found");
         }
 
-        var destinationWallet = await _walletRepository.GetByIdAsync(transactionDto.DestinationWalledId);
+        var destinationWallet = await _walletRepository.GetByIdAsync(transactionDto.DestinationWalletId);
         if (destinationWallet == null)
         {
-            throw new KeyNotFoundException($"Destination wallet with ID {transactionDto.DestinationWalledId} not found");
+            throw new KeyNotFoundException($"Destination wallet with ID {transactionDto.DestinationWalletId} not found");
         }
 
         if (wallet.Balance < transactionDto.Amount)

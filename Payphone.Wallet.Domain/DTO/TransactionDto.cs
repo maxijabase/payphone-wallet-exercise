@@ -10,7 +10,7 @@ public class TransactionDto
     public int WalletId { get; set; }
 
     [Required]
-    public int DestinationWalledId { get; set; }
+    public int DestinationWalletId { get; set; }
 
     [Required]
     [Range(0, (double)decimal.MaxValue, ErrorMessage = "Amount must be greater than 0!")]
