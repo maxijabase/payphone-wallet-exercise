@@ -13,7 +13,7 @@ public class TransactionDto
     public int DestinationWalledId { get; set; }
 
     [Required]
-    [Range(double.Epsilon, double.MaxValue)]
+    [Range(0, (double)decimal.MaxValue, ErrorMessage = "Amount must be greater than 0!")]
     public decimal Amount { get; set; }
 
     [Required]

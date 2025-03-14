@@ -48,6 +48,12 @@ public class TransactionService : ITransactionService
             throw new KeyNotFoundException($"Wallet with ID {transactionDto.WalletId} not found");
         }
 
+        var destinationWallet = await _walletRepository.GetByIdAsync(transactionDto.DestinationWalledId);
+        if (destinationWallet == null)
+        {
+            throw new KeyNotFoundException($"Destination wallet with ID {transactionDto.DestinationWalledId} not found");
+        }
+
         if (wallet.Balance < transactionDto.Amount)
         {
             throw new InvalidOperationException("Insufficient balance for this transaction");
@@ -57,9 +63,11 @@ public class TransactionService : ITransactionService
         transaction.CreatedAt = DateTime.UtcNow;
 
         wallet.Balance -= transaction.Amount;
+        destinationWallet.Balance += transaction.Amount;
 
         await _transactionRepository.AddAsync(transaction);
         await _walletRepository.UpdateAsync(wallet);
+        await _walletRepository.UpdateAsync(destinationWallet);
 
         return _mapper.Map<TransactionDto>(transaction);
     }

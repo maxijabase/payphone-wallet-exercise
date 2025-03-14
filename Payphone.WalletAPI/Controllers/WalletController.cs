@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PayphoneWallet.API.Filters;
 using PayphoneWallet.Application.Interfaces;
 using PayphoneWallet.Domain.DTO;
 
@@ -6,6 +7,7 @@ namespace PayphoneWallet.API.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
+[ValidateModel]
 public class WalletController : ControllerBase
 {
     private readonly IWalletService _walletService;
