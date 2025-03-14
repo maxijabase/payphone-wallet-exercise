@@ -26,6 +26,7 @@ public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options
         {
             entity.HasKey(e => e.Id);
             entity.Property(e => e.Id).ValueGeneratedOnAdd();
+            entity.Property(e => e.DestinationWalletId).IsRequired();
             entity.Property(e => e.Amount).HasColumnType("decimal(18,2)").IsRequired();
             entity.Property(e => e.CreatedAt).HasDefaultValueSql("DATE()");
             entity.Property(e => e.UpdatedAt).HasDefaultValueSql("DATE()");
